@@ -3,36 +3,35 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Box from "@mui/material/Box";
 
+
 function Edit() {
-  const navigate = useNavigate();
-  const [title, setTitle] = useState("");
-  const [desc, setDesc] = useState("");
+  const navigate = useNavigate()
+  const [title, setTitle] = useState('')
+  const [desc, setDesc] = useState('')
 
   const handleTitleChange = (e) => {
-    setTitle(e.target.value);
-  };
+      setTitle(e.target.value)
+  }
   const handleDescChange = (e) => {
-    setDesc(e.target.value);
-  };
+      setDesc(e.target.value)
+  }
+
 
   const handleEdit = () => {
-    console.log({ title, desc, index: localStorage.getItem("editIndex") });
-    let blogs =
-      localStorage.getItem("blogs") && localStorage.getItem("blogs").length > 0
-        ? JSON.parse(localStorage.getItem("blogs"))
-        : [];
+      console.log({ title, desc, index: localStorage.getItem('editIndex') })
+      let blogs = localStorage.getItem('blogs') && localStorage.getItem('blogs').length > 0 ? JSON.parse(localStorage.getItem('blogs')) : []
 
-    const _blogs = blogs.map((blog, blogInIndex) => {
-      if (blogInIndex === localStorage.getItem("editIndex")) {
-        return { title, desc };
-      } else {
-        return blog;
-      }
-    });
-    console.log(_blogs);
-    localStorage.setItem("blogs", JSON.stringify(_blogs));
-    navigate("/");
-  };
+      const _blogs = blogs.map((blog, blogInIndex) => {
+          if (blogInIndex == localStorage.getItem('editIndex')) {
+              return { title, desc }
+          } else {
+              return blog
+          }
+      })
+      console.log(_blogs)
+      localStorage.setItem('blogs', JSON.stringify(_blogs))
+      navigate('/')
+  }
 
   return (
     <>
