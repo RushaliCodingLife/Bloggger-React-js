@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Bloggger-React-js/static/css/main.0d3f4520.css",
+    "main.js": "/Bloggger-React-js/static/js/main.277c2713.js",
+    "static/js/787.f055211e.chunk.js": "/Bloggger-React-js/static/js/787.f055211e.chunk.js",
+    "static/media/2.png": "/Bloggger-React-js/static/media/2.6b540ef1046807c09d61.png",
+    "index.html": "/Bloggger-React-js/index.html",
+    "main.0d3f4520.css.map": "/Bloggger-React-js/static/css/main.0d3f4520.css.map",
+    "main.277c2713.js.map": "/Bloggger-React-js/static/js/main.277c2713.js.map",
+    "787.f055211e.chunk.js.map": "/Bloggger-React-js/static/js/787.f055211e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d3f4520.css",
+    "static/js/main.277c2713.js"
+  ]
+}
